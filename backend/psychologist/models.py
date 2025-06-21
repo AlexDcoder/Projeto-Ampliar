@@ -6,6 +6,6 @@ class Psychologist(models.Model):
     crp = models.CharField(max_length=50, unique=True)
     phone = models.CharField(max_length=15, blank=True, null=True)
 
-    def __repr__(self):
-        return f"Psychologist(name={self.name}, email={self.crp}, phone={self.phone})"
+    def __str__(self):
+        return self.name
     
